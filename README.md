@@ -1,2 +1,2 @@
-# JavaScriptBigHomework
-JavaScriptBigHomework
+# JavaScriptAssignment
+JavaScriptAssignment
