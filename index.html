@@ -9,6 +9,9 @@
             -->
         
         <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+            <!-- 引入名为 "style.css" 的 CSS 样式表文件，用于定义网页的样式和布局。文件路径为 "css/style.css"。该样式表适用于所有媒体类型（all）。 -->
+        <link href="css/index.css" rel="stylesheet" type="text/css" media="all">
+            <!-- 引入名为 "index.css" 的 CSS 样式表文件，用于定义网页的样式和布局。文件路径为 "css/index.css"。该样式表适用于所有媒体类型（all）。 -->
             <!--
                 <link> 标签定义文档与外部资源的关系；
                 href 属性：规定被链接文档的位置；
@@ -16,7 +19,7 @@
                 type 属性：规定被链接文档的 MIME 类型；
                 media 属性all 值：规定被链接文档将显示在所有设备上。
             -->
-        <link rel="shortcut icon" href="images/FaviconTransparent.ico">    <!-- 为网页标题添加图标 -->
+        <link rel="shortcut icon" href="images/favicon.ico">    <!-- 为网页标题添加图标 -->
 
         <!--
             <meta> 元素可提供有关页面的元信息（meta-information），比如针对搜索引擎和更新频度的描述和关键词；
@@ -59,15 +62,52 @@
         <title>JavaScript Assignment Blog</title>    <!-- <title> 元素定义文档的标题。 -->
     </head>
 
-    <body>
-        <header>    <!--网页的头部部分-->
-            <nav class="dropdown">    <!--<nav> 标签定义导航链接的部分。下拉导航栏。-->
+    <body>    <!-- body 元素定义文档的主体 -->
+        <header>    <!-- 网页的头部部分 -->
+            <nav>    <!-- <nav> 标签定义导航链接的部分，首页按钮 -->
+                <a href="index.html">    <!-- <a> 标签定义超链接，用于从当前页面链接到其他页面。 -->
+                    <button id="homeButton">JavaScript Assignment Blog</button>
+                        <!-- 
+                            创建一个按钮元素，用于返回主页。id 属性为 "homeButton"，用于在 JavaScript 中引用该按钮。
+                            按钮上显示的文本为 "JavaScript Assignment Blog"。 
+                        -->
+                </a>
+            </nav>
+            
+            <nav class="top-nav">    <!--<nav> 标签定义导航链接的部分。顶部导航栏。-->
+                <input type="text" id="search" onkeypress="handleKeyPress(event)" placeholder="输入搜索内容...">
+                    <!-- 
+                        创建一个文本输入框，用于搜索功能。id 属性为 "search"，用于在 JavaScript 中引用。
+                        onkeypress 事件监听按键操作，调用 handleKeyPress 函数处理按键事件。
+                        placeholder 属性为文本框的占位符文本，提示用户输入搜索内容。 
+                    -->
+                <a href="pages/calculator.html">在线计算器</a>    <!-- <a> 标签定义超链接，用于从当前页面链接到其他页面。 -->
+                <a href="pages/graduate.html">毕业倒计时</a>    <!-- <a> 标签定义超链接，用于从当前页面链接到其他页面。 -->
+                <a href="pages/background.html">壁纸轮播</a>    <!-- <a> 标签定义超链接，用于从当前页面链接到其他页面。 -->
+                <a href="pages/first-code.html">我们的第一段JS代码</a>    <!-- <a> 标签定义超链接，用于从当前页面链接到其他页面。 -->
+                <a href="index.html">首页</a>    <!-- <a> 标签定义超链接，用于从当前页面链接到其他页面。 -->
             </nav>
         </header>
-        <section class="index-jz">    <!--<section> 标签定义文档中的节（ section 、区段）。网页中间部分，即每个人编写的代码部分。-->
+
+        <section>    <!--<section> 标签定义文档中的节（ section 、区段）。网页中间部分，即每个人编写的代码部分。-->
+            <div id="typewriter" class="typewriter-text"></div>
+                <!-- 
+                    创建一个 div 元素，用于实现打字机效果。id 属性为 "typewriter"，用于在 JavaScript 中引用该元素。
+                    class 属性为 "typewriter-text"，用于样式控制和选择器选择。 
+                -->
         </section>
+
         <footer>    <!--网页的足部部分-->
+            <p class="footerAuthor">Author: Yu Haoyan, Shui Hanjin, Zhu Wanxuan</p>
+                <!-- 
+                    创建一个段落元素，用于显示作者信息。class 属性为 "footerAuthor"，用于样式控制和选择器选择。
+                    显示的作者信息为 "Yu Haoyan, Shui Hanjin, Zhu Wanxuan"。 
+                -->
         </footer>
+
         <script type="text/javascript" src="js/script.js"></script>
+            <!-- 引入名为 "script.js" 的 JavaScript 文件，用于提供额外的脚本功能。文件路径为 "js/script.js"。 -->
+        <script type="text/javascript" src="js/index.js"></script>
+            <!-- 引入名为 "index.js" 的 JavaScript 文件，用于提供网页的主要脚本功能。文件路径为 "js/index.js"。 -->
     </body>
 </html>
