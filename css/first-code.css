@@ -7,6 +7,6 @@
     color: white;    /* 字体颜色为白色 */
     display: flex;    /* 将元素以弹性布局方式显示 */
     justify-content: center;    /* 在主轴上居中对齐 */
-    padding: 200px 0;    /* 设置上下内边距为200像素，左右内边距为0 */
+    padding: 225px 0;    /* 设置上下内边距为225像素，左右内边距为0 */
 }
 /* first-code.html <section> CSS End */

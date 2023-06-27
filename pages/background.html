@@ -3,8 +3,8 @@
     <head>    <!-- <head> 标签用于定义文档的头部，它是所有头部元素的容器。 -->
         <link href="../css/style.css" rel="stylesheet" type="text/css" media="all">
             <!-- 引入名为 "style.css" 的 CSS 样式表文件，用于定义网页的样式和布局。文件路径为 "../css/style.css"。该样式表适用于所有媒体类型（all）。 -->
-        <link href="../css/index.css" rel="stylesheet" type="text/css" media="all">
-            <!-- 引入名为 "index.css" 的 CSS 样式表文件，用于定义网页的样式和布局。文件路径为 "../css/index.css"。该样式表适用于所有媒体类型（all）。 -->
+        <link href="../css/background.css" rel="stylesheet" type="text/css" media="all">
+            <!-- 引入名为 "background.css" 的 CSS 样式表文件，用于定义网页的样式和布局。文件路径为 "../css/background.css"。该样式表适用于所有媒体类型（all）。 -->
             <!--
                 <link> 标签定义文档与外部资源的关系；
                 href 属性：规定被链接文档的位置；
@@ -40,7 +40,7 @@
             name 属性中 reply-to 值设定联系人的邮箱。
         -->
         <meta charset="UTF-8">    <!-- charset 属性规定 HTML 文档的字符编码为UTF-8 - Unicode 的字符编码。 -->
-        <meta name="author" content="Yu Haoyan(Student Number:22116101275),Shui Hanjin(Student Number:22116101224),Zhu Wanxuan(Student Number:22116101342)">
+        <meta name="author" content="Yu Haoyan(Student Number:22116101275)">
             <!-- name 属性中 author 值规定文档作者的姓名。 -->
         <meta name="description" content="个人博客系统的设计与实现-JavaScript Assignment Blog">
             <!-- name 属性中 description 值规定页面的描述，搜索引擎可以选择此描述来显示搜索结果。 -->
@@ -49,7 +49,7 @@
         <meta name="generator" content="Visual Studio Code">    <!-- name 属性中 generator 值用于标明网页是什么软件做的。 -->
         <meta name="robots" content="none">    <!-- name 属性中 robots 值用来告诉爬虫哪些页面需要索引，哪些页面不需要索引。 -->
         <meta name="build" content="2023.06.14">    <!-- name 属性中 build 值通过设置可以设定网站建立的日期。 -->
-        <meta name="copyright" content="Yu Haoyan,Shui Hanjin,Zhu Wanxuan">    <!-- name 属性中 copyright 值用于标注版权信息。 -->
+        <meta name="copyright" content="Yu Haoyan">    <!-- name 属性中 copyright 值用于标注版权信息。 -->
         <meta name="reply-to" content="y15601379543@gmail.com">    <!-- name 属性中 reply-to 值设定联系人的邮箱。 -->
 
         <title>JavaScript Assignment Blog</title>    <!-- <title> 元素定义文档的标题。 -->
@@ -83,24 +83,46 @@
         </header>
 
         <section>    <!--<section> 标签定义文档中的节（ section 、区段）。网页中间部分，即每个人编写的代码部分。-->
-            <div id="typewriter" class="typewriter-text"></div>
-                <!-- 
-                    创建一个 div 元素，用于实现打字机效果。id 属性为 "typewriter"，用于在 JavaScript 中引用该元素。
-                    class 属性为 "typewriter-text"，用于样式控制和选择器选择。 
-                -->
+            <div class="bg">
+                <div class="banner_container">
+                    <!-- 6张图片 -->
+                    <ul class="img_box">
+                        <li><img src="../images/bg4.jpg" alt=""></li>
+                        <li><img src="../images/bg1.jpg" alt=""></li>
+                        <li><img src="../images/bg2.jpg" alt=""></li>
+                        <li><img src="../images/bg3.jpg" alt=""></li>
+                        <li><img src="../images/bg4.jpg" alt=""></li>
+                        <li><img src="../images/bg1.jpg" alt=""></li>
+                    </ul>
+                
+                    <!-- 中间圆点 -->
+                    <ul class="sel_box">
+                        <!-- 自定义属性 -->
+                        <li data-index="0"></li>
+                        <li data-index="1"></li>
+                        <li data-index="2"></li>
+                        <li data-index="3"></li>
+                    </ul>
+                
+                    <!-- 左箭头 -->
+                    <div class="left_btn">&lt;</div>
+                    <!-- 右箭头 -->
+                    <div class="right_btn">&gt;</div>
+                </div>            
+            </div>
         </section>
 
         <footer>    <!--网页的足部部分-->
-            <p class="footerAuthor">Author: Yu Haoyan, Shui Hanjin, Zhu Wanxuan</p>
+            <p class="footerAuthor">Author: Yu Haoyan</p>
                 <!-- 
                     创建一个段落元素，用于显示作者信息。class 属性为 "footerAuthor"，用于样式控制和选择器选择。
-                    显示的作者信息为 "Yu Haoyan, Shui Hanjin, Zhu Wanxuan"。 
+                    显示的作者信息为 "Yu Haoyan"。 
                 -->
         </footer>
 
         <script type="text/javascript" src="../js/script.js"></script>
             <!-- 引入名为 "script.js" 的 JavaScript 文件，用于提供额外的脚本功能。文件路径为 "../js/script.js"。 -->
-        <script type="text/javascript" src="../js/index.js"></script>
-            <!-- 引入名为 "index.js" 的 JavaScript 文件，用于提供网页的主要脚本功能。文件路径为 "../js/index.js"。 -->
+        <script type="text/javascript" src="../js/background.js"></script>
+            <!-- 引入名为 "background.js" 的 JavaScript 文件，用于提供网页的主要脚本功能。文件路径为 "../js/background.js"。 -->
     </body>
 </html>
