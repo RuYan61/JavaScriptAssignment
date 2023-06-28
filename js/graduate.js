@@ -1,7 +1,7 @@
 // graduate.html 毕业倒计时 JS Begin
 function calculate() {
     var now = new Date();    // 获取当前时间
-    var sports = new Date("2025,6,30");    // 设置目标日期（2025年6月30日）
+    var sports = new Date(2025, 6, 30);    // 设置目标日期（2025年6月30日）
     var leftSeconds = (sports.getTime() - now.getTime()) / 1000;    // 计算剩余秒数
     var daysLeft = Math.floor(leftSeconds / 3600 / 24);    // 计算剩余天数
     var hoursLeft = Math.floor(leftSeconds / 60 / 60 % 24);    // 计算剩余小时数

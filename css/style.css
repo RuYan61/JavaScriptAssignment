@@ -31,6 +31,8 @@ body{
     background-size: cover;    /* 将背景图片按比例缩放以覆盖整个背景区域 */
     position: relative;    /* 相对定位 */
     min-height: 100vh;    /* 整个body会被撑开至屏幕高度一致。为了footer部分能自动置底。 */
+    backdrop-filter: blur(5px);    /* 应用背景模糊滤镜，模糊程度为5像素 */
+    -webkit-backdrop-filter: blur(5px);    /* 应用webkit私有的背景模糊滤镜，模糊程度为5像素 */
 }
 
 a{    /* 设置超链接的样式，去除文本超链接下划线 */
@@ -49,7 +51,7 @@ header{    /* <header>标签对应显示区域的划分和定义 */
     float: left;    /* 按钮向左浮动。 */
     background: transparent;    /* 设置背景为透明 */
     padding: 20px 40px;    /* 设置内边距为20px的垂直内边距和40px的水平内边距 */
-    font-size: 20px;    /* 设置字体为20px大小的 */
+    font: 20px "JetBrains Mono";    /* 设置字体为20px大小的"JetBrains Mono" */
     color: white;    /* 设置文字颜色为白色 */
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);    /* 添加文字阴影效果，偏移值为5px水平和5px垂直，模糊半径为10px，颜色为半透明黑色 */
     border: none;    /* 移除边框 */
@@ -69,7 +71,7 @@ header{    /* <header>标签对应显示区域的划分和定义 */
     color: white;    /* 字体颜色为白色 */
     width: 200px;    /* 长度 */
     box-sizing: border-box;    /* 盒子的宽度值和高度值包含元素的内边距和边框 */
-    border: 0px solid #ccc;    /* 置四条边框的样式 */
+    border: 0px solid white;    /* 置四条边框的样式 */
     border-radius: 10px;    /* 圆角边框圆角的大小 */
     font-size: 20px;    /* 字体大小 */
     background: transparent;    /* 搜索框透明 */
